@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let contact of contacts">
+            <div class="card" style="width: 20rem; height: 47rem; margin: 10px 5px; border-color: black; border-width: 2px;">
+                <img class="card-img-top"
+                    src= {{contact.image}}
+                    alt="Card image cap"
+                    style="height: 30rem; width: 18rem;">
+                <div class="card-body">
+                    <h5 style="margin-left: 55px;"> {{contact.name}} </h5>
+                    <!-- <pre class="h5 ml-2">LinkedIn   Facebook</pre> -->
+                    <br/> <br/>
+                    <pre class="h6"> ID    : {{contact.id}} </pre>
+                    <pre class="h6"> Mobile: {{contact.mobile}} </pre>
+                    <pre class="h6"> E-mail: {{contact.email}} </pre>
+                    <a href="#" class="btn btn-danger col-md-12">View Information</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
